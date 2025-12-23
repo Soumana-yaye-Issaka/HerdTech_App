@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HerdTech_App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <header class="container-fluid d-none p-3 d-lg-block bg-secondary-subtle">
+    <section class="d-flex justify-content-between align-items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100" height="100" viewBox="0 0 158.8 158.8">
+        <path
+          d="m107.2 160.8 1.6-4.7c1.4-3.3 4.4-6.4 7.4-7.9 1.5-.7 2-.8 4.2-.8 3.1 0 4.4.5 6.7 2.7l1.6 1.5h3.3c3.3 0 3.4 0 5.1-.9 6.6-3.3 8.6-11.5 4.5-18.4-1-1.6-4.4-5.1-4.2-4.2l.9 2.9c.5 2 .6 2.7.6 5-.2 4.5-1.5 6.3-4.5 6.3q-3.7.1-4.2-4.3-.5-4.1-3.6-4-1.7 0-3.4 3.1-.6 1.4-1.8 2.1c-1 .7-1.3.8-3.1.8s-2.2-.1-3.2-.8a5 5 0 0 1-2.1-4.1c0-1.3.2-1.8 1-3.2 1.3-2.2 1.4-2.8 1-4q-.3-2-4.4-3.4c-2.2-.8-4.5-2-4.5-2.4l1-.4q1.8-.3 3.3-1.6c.7-.5 1-.6 6.6-.8 8.5-.2 13 .4 17.6 2.5a23 23 0 0 1 11.8 12.5c.7 2 1 6.8.5 9-.4 2-1.8 4.8-3.2 6.5s-4 3.6-6.3 4.5-6 1.1-8.3.6l-1.6-.3-1.1 1a16 16 0 0 1-6 3.6c-1 .2-4 .7-6.7 1zm-25.5-5.4a32 32 0 0 1-11-18c-.8-3-1-9.7-.6-13 .7-5.2 2.8-11.6 5.4-16.3 1.4-2.6 1.7-3 2.6-3q2.3 0 4.4-2 1.3-1.2 1.4-1.5l-2.5.5c-4.2 1.2-6.6.6-9.8-2.7-1-1-1.7-2-1.7-2.1 0-.5 2-1.9 3.5-2.3q3-1 6.5.6c2.3 1 3.6 1.2 5.1.8q2.3-.3-.4-1.1c-3-1.1-5-4-5-7.1s1.7-6.1 4.3-7.8c.9-.5 3.2-1.3 3.2-1l-1 1.9c-1 2-1.5 4.4-1.3 5.7.3 1.2 1.3 3 2 3.3s1 .2 2.7-.3c2.6-.9 6-1 8.1-.2.8.3 1.8.5 2.1.5 1.6 0 4.4-2.4 5-4.4.4-1.2.4-3.4.1-5q-.4-1.4.3-.8.6.3 1.3 1.5c3 4.6 1.6 10.2-3 12.5l-1.2.6a35 35 0 0 0 2.8 4.6V96l1.3-.6c1.9-1 5-1 6.8 0q1.3.7 1.8 1.3c.5.5.5.6.1 1.1a16 16 0 0 1-4.1 4c-1 .5-1.6.6-3.5.6h-2.2l.4 2c.7 2.6.7 2.6-.3 1.7s-1.4-1.6-2.7-5.4c-1.8-5.3-3.3-7.6-5.3-8.5-1.8-.8-7.3-.6-8.7.3-.4.3-.2.5 3.3 3 3 2 4 3.1 6.1 7.3 3 5.6 4.7 6.8 10 7 3.1.2 3.6.4 3.7 1.7q.2 2.9-.7 4.7c-1 2.2-2.5 2.8-7.3 3.2-7.4.7-14.6-1.4-18.6-5.4-1.4-1.5-1.8-1.7-2.4-1.5q-.7 0-.7.4c0 .6 2 3 3.3 4.4l1.5 1.4-1.3 1.5a28 28 0 0 0-6.4 25c.7 2.5 2.7 6.9 4.2 8.8 1 1.2 1 1.4.6 2q-.3.4-.6.5zm25.6-40.7q.5-.8-.9-1-1.2-.1-1.3-1.1-.2-1.1-1-.8c-.4.4-.5 1.4 0 2.1.5 1 2.4 1.5 3.2.8m-19 38.8c-5-2.6-6.5-13.5-3.1-22l2-4c1.2-2 4.3-5.5 5.2-6 .3-.1 6.5.4 6.7.6l.5 1.7q.5 2 4.2 8.6c2.3 4.3 2.4 8.4 0 10.7-1.2 1.4-2.3 1.7-5 1.8q-3.2 0-3.8 1.3c-.2.4-.5 1.7-.7 3-"
+          style="fill:#6AB449;stroke-width:.264583" transform="translate(-29.1 -40.9)" />
+      </svg>
+
+      <article>
+        <h2>Bienvennu, Mallam!</h2>
+      </article>
+
+      <div class="d-flex gap-3">
+        <div class="dropdown ">
+          <a class="btn bg-secondary-subtle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fs-4 bi bi-gear"></i>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-moon-stars-fill"></i>/<i class="bi bi-sun-fill"></i>Mode sombre</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-globe"></i> Langue</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown ">
+          <a class="btn bg-secondary-subtle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fs-5 bi bi-person-fill"></i>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person-gear"></i> Parametre du compte</a></li>
+            <li><a class="dropdown-item" href="connexion.html"><i class="bi bi-box-arrow-right"></i> Se déconnecter</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="d-flex gap-3 mt-2">
+
+      <a href="index.html"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center gap-2 p-2 w-100 card_nav">
+        <article class="img_nav"><img src="Icons/dashboard.svg" alt=""></article>
+        <h6>Tableau de bord</h6>
+      </a>
+
+      <a href="#"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center gap-2 p-2 w-100 card_nav">
+        <article class="img_nav"><img src="Icons/Carte de la ferme.svg" alt=""></article>
+        <h6>Carte</h6>
+      </a>
+
+      <a href="cheptel.html"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center gap-2 p-2 w-100 card_nav">
+        <article class="img_nav"><img src="Icons/Cheptel.svg" alt=""></article>
+        <h6>Cheptel</h6>
+      </a>
+
+      <a href="stockage.html"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center gap-2 p-2 w-100 card_nav">
+        <article class="img_nav"><img src="Icons/Stockage.svg" alt=""></article>
+        <h6>Stockage</h6>
+      </a>
+
+      <a href="suivi.html"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center gap-2 p-2 w-100 card_nav">
+        <article class="img_nav"><img src="Icons/Suivi du bétail.svg" alt=""></article>
+        <h6>Suivi</h6>
+      </a>
+
+      <a href="tache.html"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center gap-2 p-2 w-100 card_nav">
+        <article class="img_nav"><img src="Icons/Gestionnaire de Taches.svg" alt=""></article>
+        <h6>Taches</h6>
+      </a>
+
+      <a href="notification.html"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center gap-2 p-2 w-100 card_nav">
+        <article class="img_nav"><img src="Icons/Notifications.svg" alt=""></article>
+        <h6>Notification</h6>
+      </a>
+    </section>
+
+  </header>
+
+  <div class="Color_main d-flex">
+
+    <aside
+      class="said_bar d-flex d-lg-none flex-column justify-content-center align-items-center p-2 gap-3 d-lg-non sticky-top">
+
+      <a href="index.html"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center h-100 gap-2 p-2 nav_width card_nav">
+        <article class="img_nav"><img src="Icons/dashboard.svg" alt=""></article>
+      </a>
+
+      <a href="#"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center h-100  gap-2 p-2 nav_width card_nav">
+        <article class="img_nav"><img src="Icons/Carte de la ferme.svg" alt=""></article>
+      </a>
+
+      <a href="cheptel.html"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center h-100 gap-2 p-2 nav_width  card_nav">
+        <article class="img_nav"><img src="Icons/Cheptel.svg" alt=""></article>
+      </a>
+
+      <a href="stockage.html"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center h-100 gap-2 p-2 nav_width card_nav">
+        <article class="img_nav"><img src="Icons/Stockage.svg" alt=""></article>
+      </a>
+
+      <a href="suivi.html"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center h-100 gap-2 p-2 nav_width card_nav">
+        <article class="img_nav"><img src="Icons/Suivi du bétail.svg" alt=""></article>
+      </a>
+
+      <a href="tache.html"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center h-100 gap-2 p-2 nav_width card_nav">
+        <article class="img_nav"><img src="Icons/Gestionnaire de Taches.svg" alt=""></article>
+      </a>
+
+      <a href="notification.html"
+        class="d-flex flex-column justify-content-center align-items-center text-decoration-none bg-white text-dark text-center h-100 gap-2 p-2 nav_width card_nav">
+        <article class="img_nav"><img src="Icons/Notifications.svg" alt=""></article>
+      </a>
+
+      <div class="d-flex flex-column gap-2">
+        <div class="dropdown ">
+          <a class="btn bg-secondary-subtle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fs-4 bi bi-gear"></i>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-moon-stars-fill"></i>/<i class="bi bi-sun-fill"></i>Mode sombre</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-globe"></i> Langue</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown ">
+          <a class="btn bg-secondary-subtle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fs-5 bi bi-person-fill"></i>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person-gear"></i> Parametre du compte</a></li>
+            <li><a class="dropdown-item" href="connexion.html"><i class="bi bi-box-arrow-right"></i> Se déconnecter</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </aside>
+
+    <main class="pt-4 flex-grow-1 pb-4">
+
+      <section class="container">
+        <div class="d-flex align-items-center gap-1">
+          <article class="img_tableau_bord bg-white"><img src="Icons/Gestionnaire de Taches.svg" alt=""></article>
+          <h5 class="m-0">Gestion des taches à faire:7</h5>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mt-3">
+          <p class="m-0">Utilisateur connecté: Mallam</p>
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Ajout_Taches">
+            <i class="bi bi-plus-lg"></i> Ajouter des taches
+          </button>
+        </div>
+      </section>
+
+      <section class="container mt-4">
+        <div class="row g-4">
+          <div class="col-12 col-md-12 col-lg-6">
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex justify-content-between bg-secondary-subtle p-2 rounded card_nav">
+                <h5>Nombre des taches à faire: 7</h5>
+                <i class="bi bi-clipboard-x-fill fs-3"></i>
+              </div>
+              <div class="bg-secondary-subtle p-2 rounded card_nav">
+                <div>
+                  <article class="d-flex bg-secondary p-2 justify-content-between">
+                    <aside class="fs-4">
+                      <input id="Tache" type="checkbox">
+                      <label for="Tache">Titre de la tache</label>
+                    </aside>
+                    <h5>Actions</h5>
+                  </article>
+
+                  <div class="bg-white p-2 d-flex flex-column gap-2">
+                    <article class="d-flex justify-content-between border-bottom pb-2">
+                      <aside class="fs-5">
+                        <input id="Choix1" type="checkbox">
+                        <label for="Choix1">Achetter du fourrage</label>
+                      </aside>
+                      <div>
+                        <button class="btn btn-success text-dark rounded border-0" data-bs-toggle="modal"
+                          data-bs-target="#Tache_modifier"><i class="bi bi-pen-fill"></i></button>
+                        <button class="btn btn-success text-dark rounded border-0"><i
+                            class="bi bi-trash3-fill"></i></button>
+                        <button class="btn btn-success text-dark rounded border-0"><i
+                            class="bi bi-check-lg"></i></button>
+                      </div>
+                    </article>
+
+                    <article class="d-flex justify-content-between border-bottom pb-2">
+                      <aside class="fs-5">
+                        <input id="Choix2" type="checkbox">
+                        <label for="Choix2">Soigner un aminal malade</label>
+                      </aside>
+                      <div>
+                        <button class="btn btn-success text-dark rounded border-0" data-bs-toggle="modal"
+                          data-bs-target="#Tache_modifier"><i class="bi bi-pen-fill"></i></button>
+                        <button class="btn btn-success text-dark rounded border-0"><i
+                            class="bi bi-trash3-fill"></i></button>
+                        <button class="btn btn-success text-dark rounded border-0"><i
+                            class="bi bi-check-lg"></i></button>
+                      </div>
+                    </article>
+
+                    <article class="d-flex justify-content-between border-bottom pb-2">
+                      <aside class="fs-5">
+                        <input id="Choix3" type="checkbox">
+                        <label for="Choix3">Désinfecter l'enclos</label>
+                      </aside>
+                      <div>
+                        <button class="btn btn-success text-dark rounded border-0" data-bs-toggle="modal"
+                          data-bs-target="#Tache_modifier"><i class="bi bi-pen-fill"></i></button>
+                        <button class="btn btn-success text-dark rounded border-0"><i
+                            class="bi bi-trash3-fill"></i></button>
+                        <button class="btn btn-success text-dark rounded border-0"><i
+                            class="bi bi-check-lg"></i></button>
+                      </div>
+                    </article>
+
+                    <article class="d-flex justify-content-between border-bottom pb-2">
+                      <aside class="fs-5">
+                        <input id="Choix4" type="checkbox">
+                        <label for="Choix4">Préparer les vaccins</label>
+                      </aside>
+                      <div>
+                        <button class="btn btn-success text-dark rounded border-0" data-bs-toggle="modal"
+                          data-bs-target="#Tache_modifier"><i class="bi bi-pen-fill"></i></button>
+                        <button class="btn btn-success text-dark rounded border-0"><i
+                            class="bi bi-trash3-fill"></i></button>
+                        <button class="btn btn-success text-dark rounded border-0"><i
+                            class="bi bi-check-lg"></i></button>
+                      </div>
+                    </article>
+
+                    <article class="d-flex justify-content-between border-bottom pb-2">
+                      <aside class="fs-5">
+                        <input id="Choix5" type="checkbox">
+                        <label for="Choix5">Donner à manger aux animaux</label>
+                      </aside>
+                      <div>
+                        <button class="btn btn-success text-dark rounded border-0" data-bs-toggle="modal"
+                          data-bs-target="#Tache_modifier"><i class="bi bi-pen-fill"></i></button>
+                        <button class="btn btn-success text-dark rounded border-0"><i
+                            class="bi bi-trash3-fill"></i></button>
+                        <button class="btn btn-success text-dark rounded border-0"><i
+                            class="bi bi-check-lg"></i></button>
+                      </div>
+                    </article>
+
+                    <article class="d-flex justify-content-between border-bottom pb-2">
+                      <aside class="fs-5">
+                        <input id="Choix6" type="checkbox">
+                        <label for="Choix6">Réparer l'abreuvoir</label>
+                      </aside>
+                      <div>
+                        <button class="btn btn-success text-dark rounded border-0" data-bs-toggle="modal"
+                          data-bs-target="#Tache_modifier"><i class="bi bi-pen-fill"></i></button>
+                        <button class="btn btn-success text-dark rounded border-0"><i
+                            class="bi bi-trash3-fill"></i></button>
+                        <button class="btn btn-success text-dark rounded border-0"><i
+                            class="bi bi-check-lg"></i></button>
+                      </div>
+                    </article>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-12 col-lg-6">
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex justify-content-between bg-secondary-subtle p-2 rounded card_nav">
+                <h5>Nombre des taches déja accomplies: 4</h5>
+                <i class="bi bi-clipboard-x-fill fs-3"></i>
+              </div>
+              <div class="bg-secondary-subtle p-2 rounded card_nav">
+                <div>
+                  <article class="d-flex bg-secondary p-2 justify-content-between">
+                    <aside class="fs-4">
+                      <input id="Taches" type="checkbox">
+                      <label for="Taches">Titre de la tache</label>
+                    </aside>
+                    <h5>Actions</h5>
+                  </article>
+
+                  <div class="bg-white p-2 d-flex flex-column gap-2">
+
+                    <article class="d-flex justify-content-between border-bottom pb-2">
+                      <aside class="fs-5">
+                        <input id="Choix6" type="checkbox">
+                        <label for="Choix6">Préparer des vaccins</label>
+                      </aside>
+                      <div>
+                        <button class="btn btn-danger text-dark rounded border-0" data-bs-toggle="modal"
+                          data-bs-target="#Tache_Supprimer"><i
+                            class="bi bi-trash3-fill"></i></button>
+                      </div>
+                    </article>
+
+                    <article class="d-flex justify-content-between border-bottom pb-2">
+                      <aside class="fs-5">
+                        <input id="Choix7" type="checkbox">
+                        <label for="Choix7">Donner à manger aux aminaux</label>
+                      </aside>
+                      <div>
+                        <button class="btn btn-danger text-dark rounded border-0" data-bs-toggle="modal"
+                          data-bs-target="#Tache_Supprimer"><i
+                            class="bi bi-trash3-fill"></i></button>
+                      </div>
+                    </article>
+
+                    <article class="d-flex justify-content-between border-bottom pb-2">
+                      <aside class="fs-5">
+                        <input id="Choix8" type="checkbox">
+                        <label for="Choix8">Traire les Vaches</label>
+                      </aside>
+                      <div>
+                        <button class="btn btn-danger text-dark rounded border-0" data-bs-toggle="modal"
+                          data-bs-target="#Tache_Supprimer"><i
+                            class="bi bi-trash3-fill"></i></button>
+                      </div>
+                    </article>
+
+                    <article class="d-flex justify-content-between border-bottom pb-2">
+                      <aside class="fs-5">
+                        <input id="Choix9" type="checkbox">
+                        <label for="Choix9">Préparer les vaccins</label>
+                      </aside>
+                      <div>
+                        <button class="btn btn-danger text-dark rounded border-0" data-bs-toggle="modal"
+                          data-bs-target="#Tache_Supprimer"><i
+                            class="bi bi-trash3-fill"></i></button>
+                      </div>
+                    </article>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- ----------------------Ajout_Tahces_Modal---------------------- -->
+    <div class="modal fade" id="Ajout_Taches" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header bg-secondary-subtle">
+            <h5 class="modal-title">Ajouter une tache</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body w-100">
+            <div class="outlined-input w-100">
+              <input type="text" name="test" placeholder=" ">
+              <label for="test">Veuillez entrez le nom de la tache</label>
+            </div>
+          </div>
+
+          <div class="modal-footer bg-secondary-subtle">
+            <button type="button" class="btn btn-success text-dark">Confirmer</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- -------------------________-------_______-------_______------------ -->·
+
+    <!-- ----------------------Modifier_Tahces_Modal---------------------- -->
+    <div class="modal fade" id="Tache_modifier" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header bg-secondary-subtle">
+            <h5 class="modal-title">Modifier la tache</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body w-100">
+            <div class="outlined-input w-100">
+              <input type="text" name="test" placeholder=" ">
+              <label for="test">Acheter du fourrage fd</label>
+            </div>
+          </div>
+
+          <div class="modal-footer bg-secondary-subtle">
+            <button type="button" class="btn btn-success text-dark">Confirmer</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- -------------------________-------_______-------_______------------ -->·
+
+    <!-- ----------------------Supprimer_Tahces_Modal---------------------- -->
+    <div class="modal fade" id="Tache_Supprimer" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header bg-secondary-subtle">
+            <h5 class="modal-title">Modifier la tache</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body w-100">
+           <p>Est-vous sur de vouloir supprimer <span class="fw-bold">Préparer les vaccins</span> ?</p>
+          </div>
+
+          <div class="modal-footer bg-secondary-subtle">
+            <button type="button" class="btn btn-danger text-dark">Confirmer</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- -------------------________-------_______-------_______------------ -->·
+
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

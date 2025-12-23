@@ -1,0 +1,120 @@
+.Logo{
+    height: 70px;
+    width: 70px;
+}
+.Logo img{
+    height: 100%;
+    width: 100%;
+}
+.said_bar{
+    height: 100vh !important;
+    width: 100px;
+}
+.nav_width{
+    width: 80% !important;
+}
+.img_nav{
+    height: 40px;
+    width: 40px;
+    color: white;
+}
+.img_nav img{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.card_nav{
+    box-shadow: 0px 1px 2px 3px rgba(0,0,0,0.59);
+}
+.Color_main{
+    background-color: #D2D2D2;
+}
+.img_tableau_bord{
+    height: 50px;
+    width: 50px;
+}
+.img_tableau_bord img{
+    height: 100%;
+    width: 100%;
+}
+.img_marqueur{
+    height: 45px;
+    width: 65px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px 3px rgba(0,0,0,0.59);
+}
+.img_marqueur img{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+/* -----------Suivi_Css------------ */
+.SousAsignation{
+    height: 35px;
+    width: 35px;
+}
+
+/* ---------Notification_Css____________ */
+
+.Notification_color{
+    width: 3% !important;
+}
+
+/* OUTLINED INPUT STYLES */
+
+.outlined-input {
+    position: relative;
+}
+
+.outlined-input input {
+    color: var(--main-white);
+    height: 3rem;
+    width: 100%;
+    outline: 1px solid #1A8755;
+    border-radius: 5px;
+    border: none;
+    padding-left: 20px;
+    transition: .1s ;
+}
+
+.outlined-input label {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    transition: .2s var(--main-ease);
+    font-size: 1rem;
+    pointer-events: none;
+    padding: 0 5px;
+}
+
+.outlined-input input:not(:placeholder-shown) ~ label,
+.outlined-input input:focus ~ label {
+    top: 0px;
+    left: 10px;
+    font-size: 1rem;
+}
+
+.outlined-input input:focus {
+    outline: 1px solid rgb(0, 0, 0) !important;
+}
+
+.outlined-input input:focus ~ label {
+    color: black !important;
+}
+
+/* END OUTLINED INPUT STYLES */
+
+@media (max-width:768px) {
+    .Carte{
+        width: 635px !important;
+    }
+
+    .Detail_tableau_marge{
+        width: 650px !important;
+    }
+}
